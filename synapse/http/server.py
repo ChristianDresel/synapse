@@ -350,7 +350,7 @@ class JsonResource(HttpServer, resource.Resource):
 
 
 def _options_handler(request):
-    return {}
+    return 200, {}
 
 
 def _unrecognised_request_handler(request):
